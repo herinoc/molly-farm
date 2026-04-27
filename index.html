@@ -1,197 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rizky Molly Farm</title>
-    <meta name="description"
-        content="Premium Molly Fish Farm located in Kediri, East Java. Exploring the finest varieties of Molly fish.">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Sho-Molly Jatim | Toko Ikan Hias</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sho-Molly Jatim: Toko Ikan Hias Molly Terbaik, Sehat, dan Berkualitas. Pengiriman seluruh Indonesia.">
+    <!-- Google Fonts: Fredoka & Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-        <div class="nav-content">
-            <h1 class="logo">Molly<span>Farm</span></h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#varieties">Varieties</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <!-- Background Bubbles -->
+    <div id="bubbles-container"></div>
+    
+    <!-- Floating Mascots -->
+    <div class="mascot-wrapper" id="mascot-sponge">
+        <div class="mascot parallax-mascot" data-speed="0.06">
+            <img src="assets/sponge.png" alt="Sponge Mascot">
         </div>
-    </nav>
+    </div>
+    <div class="mascot-wrapper" id="mascot-star">
+        <div class="mascot parallax-mascot" data-speed="0.09">
+            <img src="assets/star.png" alt="Star Mascot">
+        </div>
+    </div>
 
-    <!-- Parallax Hero -->
-    <header id="home" class="parallax-hero">
-        <div class="hero-bg"></div>
-        <div class="bubbles">
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-        </div>
-        <div class="hero-content fade-in-up">
-            <h2>Discover Exquisite</h2>
-            <h1>Rizky Molly Fish</h1>
-            <p>Bred with passion in the heart of East Java, Indonesia.</p>
-            <a href="#varieties" class="btn-primary">Explore Catalog</a>
-        </div>
-        <div class="custom-shape-divider-bottom">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-                <path class="shape-fill"
-                    d="M0,224L60,208C120,192,240,160,360,165.3C480,171,600,213,720,208C840,203,960,149,1080,133.3C1200,117,1320,139,1380,149.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-                </path>
+    
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo-wrapper">
+            <svg viewBox="0 0 24 24" class="navbar-mascot-modern" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                 <path d="M2 12c2.5 2 4.5 2 6 0 1.5-2 3.5-2 6 0s4.5 2 6 0M2 18c2.5 2 4.5 2 6 0 1.5-2 3.5-2 6 0s4.5 2 6 0"/>
             </svg>
+            <div class="logo">Sho-Molly</div>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+        <a href="#produk" class="nav-cta">Pesan</a>
     </header>
 
-    <!-- Engaging Features Section -->
-    <section id="features" class="features-section">
-        <div class="container">
-            <div class="features-grid">
-                <div class="feature-card zoom-in">
-                    <div class="feature-icon">🐠</div>
-                    <h3>Vibrant Colors</h3>
-                    <p>Our selective breeding ensures striking, well-defined colors and patterns in every fish.</p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content slide-up">
+            <h1>Selamat Datang di Lautan Molly!</h1>
+            <p>Temukan keajaiban ikan hias Molly terbaik dan sehat untuk akuarium impian Anda.</p>
+            <a href="#produk" class="cta-button">Eksplor Sekarang 🌊</a>
+        </div>
+    </section>
+
+    <!-- Sponsor / Partners -->
+    <section class="sponsor-ticker">
+        <div class="ticker-content">
+            <!-- Set 1 -->
+            <div class="sponsor-item">
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6z"/><path d="M4 16a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2z"/></svg>
+                <span>Lexxa Data Indonusa</span>
+            </div>
+            <div class="sponsor-item">
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>Takari</span>
+            </div>
+            <div class="sponsor-item">
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>TDK Sarana Informatika</span>
+            </div>
+            <div class="sponsor-item">
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><path d="M12 2c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z"/><path d="M12 22c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/><path d="M22 12c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4z"/><path d="M2 12c0 2.21 1.79 4 4 4s4-1.79 4-4-1.79-4-4-4-4 1.79-4 4z"/></svg>
+                <span>Sakura</span>
+            </div>
+            <div class="sponsor-item">
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><path d="M2 20h.01M7 20v-4M12 20v-8M17 20V8M22 4v16"/></svg>
+                <span>cignal.id</span>
+            </div>
+            <!-- Set 2 (for seamless loop) -->
+            <div class="sponsor-item">
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6z"/><path d="M4 16a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2z"/></svg>
+                <span>Lexxa Data Indonusa</span>
+            </div>
+            <div class="sponsor-item">
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>Takari</span>
+            </div>
+            <div class="sponsor-item">
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>TDK Sarana Informatika</span>
+            </div>
+            <div class="sponsor-item">
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><path d="M12 2c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z"/><path d="M12 22c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/><path d="M22 12c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4z"/><path d="M2 12c0 2.21 1.79 4 4 4s4-1.79 4-4-1.79-4-4-4-4 1.79-4 4z"/></svg>
+                <span>Sakura</span>
+            </div>
+            <div class="sponsor-item">
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><path d="M2 20h.01M7 20v-4M12 20v-8M17 20V8M22 4v16"/></svg>
+                <span>cignal.id</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shipping Info -->
+    <section id="info" class="shipping-info fade-in">
+        <div class="info-card glass-panel">
+            <h2>Pesan Sekarang, Menyelam Kemudian!</h2>
+            <div class="info-details">
+                <div class="info-item">
+                    <div class="icon">📦</div>
+                    <p>Pengiriman aman ke seluruh wilayah Indonesia</p>
                 </div>
-                <div class="feature-card zoom-in" style="transition-delay: 0.1s">
-                    <div class="feature-icon">🌊</div>
-                    <h3>Healthy Environment</h3>
-                    <p>Raised in natural sunlight with optimal water parameters for superior health.</p>
-                </div>
-                <div class="feature-card zoom-in" style="transition-delay: 0.2s">
-                    <div class="feature-icon">📦</div>
-                    <h3>Safe Shipping</h3>
-                    <p>Expert packing guarantees safe and secure arrival to your doorstep.</p>
+                <div class="info-item">
+                    <div class="icon">❤️</div>
+                    <p>Kualitas ikan sehat, kuat, dan bergaransi</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section slide-in-left">
-        <div class="container about-grid">
-            <div class="about-text">
-                <h2>Our Story</h2>
-                <p>Selamat datang di Peternakan Ikan Molly kami di Ringin Anom, Kota Kediri. Kami bangga membiakkan
-                    beragam ikan Molly yang sehat dan berwarna cerah. Dengan pengalaman bertahun-tahun dan kecintaan
-                    yang mendalam terhadap akuatik, kami memastikan setiap ikan dibesarkan dalam kondisi optimal untuk
-                    menghadirkan kehidupan dan warna ke akuarium Anda.</p>
-            </div>
-            <div class="about-stats">
-                <div class="stat-box">
-                    <h3>Premium</h3>
-                    <p>Quality</p>
+    <!-- Products -->
+    <section id="produk" class="products text-center fade-in">
+        <h2>Koleksi Molly Kami</h2>
+        <div class="products-grid">
+            <div class="product-card glass-panel interactive">
+                <div class="card-img-wrapper">
+                    <img src="assets/molly1.jpg" alt="Molly Kuning Keemasan">
                 </div>
-                <div class="stat-box">
-                    <h3>6+</h3>
-                    <p>Varieties</p>
+                <div class="card-content">
+                    <h3>Golden Molly</h3>
+                    <p class="description">Ikan Molly super cerah dengan warna kuning keemasan yang menawan.</p>
+                    <p class="price">Rp 100.000</p>
+                    <button class="order-btn" data-name="Golden Molly" data-price="10000">Pesan Sekarang</button>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Varieties Gallery -->
-    <section id="varieties" class="varieties-section">
-        <div class="container">
-            <h2 class="section-title fade-in-up">The Catalog</h2>
-            <div class="gallery-grid">
-                <!-- Cards -->
-                <div class="fish-card zoom-in">
-                    <div class="img-wrapper"><img src="assets/images/black_molly.png" alt="Black Molly Fish"></div>
-                    <div class="card-info">
-                        <h3>Black Molly</h3>
-                        <p>A striking, jet black classic variety.</p>
-                    </div>
+            <div class="product-card glass-panel interactive">
+                <div class="card-img-wrapper">
+                    <img src="assets/molly2.jpg" alt="Molly Calico">
                 </div>
-                <!-- Dalmatian -->
-                <div class="fish-card zoom-in" style="transition-delay: 0.1s">
-                    <div class="img-wrapper"><img src="assets/images/dalmatian_molly.png" alt="Dalmatian Molly Fish">
-                    </div>
-                    <div class="card-info">
-                        <h3>Dalmatian Molly</h3>
-                        <p>Beautiful silver and black speckled coloration.</p>
-                    </div>
+                <div class="card-content">
+                    <h3>Calico Molly</h3>
+                    <p class="description">Warna abstrak indah yang memberikan nuansa tropis di akuarium Anda.</p>
+                    <p class="price">Rp 150.000</p>
+                    <button class="order-btn" data-name="Calico Molly" data-price="12000">Pesan Sekarang</button>
                 </div>
-                <!-- Balloon -->
-                <div class="fish-card zoom-in" style="transition-delay: 0.2s">
-                    <div class="img-wrapper"><img src="assets/images/balloon_molly.png" alt="Balloon Molly Fish"></div>
-                    <div class="card-info">
-                        <h3>Balloon Molly</h3>
-                        <p>Unique compact body with playful swimming motion.</p>
-                    </div>
+            </div>
+            <div class="product-card glass-panel interactive">
+                <div class="card-img-wrapper">
+                    <img src="assets/molly3.jpg" alt="Dalmatian Molly">
                 </div>
-                <!-- Sailfin -->
-                <div class="fish-card zoom-in" style="transition-delay: 0.3s">
-                    <div class="img-wrapper"><img src="assets/images/sailfin_molly.png" alt="Sailfin Molly Fish"></div>
-                    <div class="card-info">
-                        <h3>Sailfin Molly</h3>
-                        <p>Features an impressive tall dorsal fin.</p>
-                    </div>
-                </div>
-                <!-- Lyretail -->
-                <div class="fish-card zoom-in" style="transition-delay: 0.4s">
-                    <div class="img-wrapper"><img src="assets/images/lyretail_molly.png" alt="Lyretail Molly Fish">
-                    </div>
-                    <div class="card-info">
-                        <h3>Lyretail Molly</h3>
-                        <p>Elegant, sweeping distinct tail extensions.</p>
-                    </div>
-                </div>
-                <!-- Platinum -->
-                <div class="fish-card zoom-in" style="transition-delay: 0.5s">
-                    <div class="img-wrapper"><img src="assets/images/platinum_molly.png" alt="Platinum Molly Fish">
-                    </div>
-                    <div class="card-info">
-                        <h3>Platinum Molly</h3>
-                        <p>Pure shimmering white with a bright luster.</p>
-                    </div>
+                <div class="card-content">
+                    <h3>Dalmatian Molly</h3>
+                    <p class="description">Motif bercak hitam elegan ala anjing Dalmatian, lincah dan sehat.</p>
+                    <p class="price">Rp 250.000</p>
+                    <button class="order-btn" data-name="Dalmatian Molly" data-price="15000">Pesan Sekarang</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container container-flex">
-            <div class="contact-details slide-in-left">
-                <h2>Visit Us</h2>
-                <p>Ready to add beautiful Mollys to your collection? Get in touch with us.</p>
-                <ul class="contact-list">
-                    <li><strong>Address:</strong> Ringin Anom, Kediri City, East Java, Indonesia</li>
-                    <li><strong>Phone:</strong> <a href="tel:0895328366969">0895328366969</a></li>
-                    <li><strong>Email:</strong> <a href="mailto:rizkymoly@gmail.com">rizkymoly@gmail.com</a></li>
-                </ul>
-                <a href="https://maps.app.goo.gl/myHG5WLgHqhajH7H7" target="_blank" class="btn-secondary">Open in Google
-                    Maps</a>
-            </div>
-            <div class="map-container slide-in-right">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8804961555516!2d112.0084042!3d-7.8025211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e785715975e533d%3A0x6b4ef89f0a8ed8db!2sRingin%20Anom%2C%20Kediri%2C%20Kota%20Kediri%2C%20Jawa%20Timur!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+    <!-- Gallery -->
+    <section id="galeri" class="gallery fade-in">
+        <h2 class="text-center">Galeri Ikan</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item tilt"><img src="assets/molly1.jpg" alt="Molly 1"></div>
+            <div class="gallery-item tilt"><img src="assets/molly2.jpg" alt="Molly 2"></div>
+            <div class="gallery-item tilt"><img src="assets/molly3.jpg" alt="Molly 3"></div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="footer-content">
-            <p class="copyright-text">
-                <a href="https://profile-company-two.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    &copy; Copyright | TDK Sarana Informatika
-                </a>
-            </p>
+    <!-- Footer / Bio Maps -->
+    <footer id="kontak" class="footer glass-panel fade-in">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h2>Sho-Molly Jatim</h2>
+                <p>📍 <strong>Alamat:</strong> Ringin Anom, Kota Kediri, Jawa Timur, Indonesia</p>
+                <p>📞 <strong>Phone:</strong> +62 895 328366969</p>
+                <p>✉️ <strong>Email:</strong> sho_rizkyfish@gmail.com</p>
+            </div>
+            <div class="footer-map">
+                <!-- Using an embedded map of Kediri City for visual appeal -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126487.63228802073!2d111.93608757041927!3d-7.816401086055536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78570ebd3a0ff9%3A0x6bba84ab758df5e8!2sKediri%2C%20Kediri%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://maps.app.goo.gl/8SVcdxtVA3WoFVxu5" target="_blank" class="map-link">Buka di Google Maps 🗺️</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="https://profile-company-two.vercel.app/" target="_blank" class="footer-credit">&copy; 2026 TDK-Sarana Informatika. All rights reserved.</a></p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>

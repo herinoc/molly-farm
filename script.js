@@ -1,36 +1,88 @@
-// Navbar Scroll Effect
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Dynamic Bubbles Creator
+    const container = document.getElementById('bubbles-container');
+    
+    function createBubble() {
+        const bubble = document.createElement('div');
+        bubble.classList.add('bubble');
+        
+        // Random size from 10px to 60px
+        const size = Math.random() * 50 + 10;
+        // Random horizontal position
+        const left = Math.random() * 100;
+        // Random duration from 6s to 18s
+        const duration = Math.random() * 12 + 6;
+
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+        bubble.style.left = `${left}vw`;
+        bubble.style.animationDuration = `${duration}s`;
+
+        container.appendChild(bubble);
+
+        // Remove bubble after animation ends to prevent memory leak
+        setTimeout(() => {
+            bubble.remove();
+        }, duration * 1000);
     }
-});
 
-// Parallax Effect logic
-const heroBg = document.querySelector('.hero-bg');
-window.addEventListener('scroll', () => {
-    let offset = window.scrollY;
-    heroBg.style.transform = `translateY(${offset * 0.4}px)`;
-});
+    // Create a new bubble frequently
+    setInterval(createBubble, 400);
 
-// Scroll Animations using Intersection Observer
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.15
-};
+    // 2. WhatsApp Order Redirect
+    const orderButtons = document.querySelectorAll('.order-btn');
+    const waNumber = "62895328366969"; // Removed the + as standard wa.me API uses just numbers with country code
 
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            observer.unobserve(entry.target);
-        }
+    orderButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const tempName = button.getAttribute('data-name');
+            const rawPrice = button.getAttribute('data-price');
+            // Format price to local string, e.g., 10.000
+            const tempPrice = parseInt(rawPrice).toLocaleString('id-ID');
+            
+            // Format message
+            const message = `Halo Sho-Molly Jatim! 🐠\n\nSaya tertarik untuk memesan ikan hias berikut:\n- *Nama*: ${tempName}\n- *Harga*: Rp ${tempPrice}\n\nApakah stoknya masih tersedia? Mohon info untuk cara pembayarannya. Terima kasih!`;
+            
+            // Encode URI
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Redirect to WhatsApp web/app
+            const waUrl = `https://wa.me/${waNumber}?text=${encodedMessage}`;
+            window.open(waUrl, '_blank');
+        });
     });
-}, observerOptions);
 
-document.querySelectorAll('.fade-in-up, .slide-in-left, .slide-in-right, .zoom-in').forEach((el) => {
-    observer.observe(el);
+    // 3. Scroll Intersection Observer for Fade In Animations
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // Optional: Stop observing once visible to only animate once
+                // Here we let it animate once
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15 // Triggers when 15% of the element is visible
+    });
+
+    fadeElements.forEach(el => observer.observe(el));
+
+    // 4. Parallax Mascots Setup
+    const mascots = document.querySelectorAll('.parallax-mascot');
+    window.addEventListener('mousemove', (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        
+        mascots.forEach(mascot => {
+            const speed = parseFloat(mascot.getAttribute('data-speed'));
+            // Calculate movement from the center of the screen
+            const dx = (window.innerWidth / 2 - x) * speed;
+            const dy = (window.innerHeight / 2 - y) * speed;
+            
+            mascot.style.transform = `translate(${-dx}px, ${-dy}px) scale(1.05)`;
+        });
+    });
 });
