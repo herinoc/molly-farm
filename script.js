@@ -85,4 +85,24 @@ document.addEventListener("DOMContentLoaded", () => {
             mascot.style.transform = `translate(${-dx}px, ${-dy}px) scale(1.05)`;
         });
     });
+
+    // 5. Mobile Navbar Toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.querySelector('nav');
+
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+    }
 });

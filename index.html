@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sho-Molly Jatim | Toko Ikan Hias</title>
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Sho-Molly Jatim: Toko Ikan Hias Molly Terbaik, Sehat, dan Berkualitas. Pengiriman seluruh Indonesia.">
+    <meta name="description"
+        content="Sho-Molly Jatim: Toko Ikan Hias Molly Terbaik, Sehat, dan Berkualitas. Pengiriman seluruh Indonesia.">
     <!-- Google Fonts: Fredoka & Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Background Bubbles -->
     <div id="bubbles-container"></div>
-    
+
     <!-- Floating Mascots -->
-    <div class="mascot-wrapper" id="mascot-sponge">
-        <div class="mascot parallax-mascot" data-speed="0.06">
-            <img src="assets/sponge.png" alt="Sponge Mascot">
-        </div>
-    </div>
     <div class="mascot-wrapper" id="mascot-star">
         <div class="mascot parallax-mascot" data-speed="0.09">
             <img src="assets/star.png" alt="Star Mascot">
         </div>
     </div>
 
-    
+
     <!-- Navbar -->
     <header class="navbar">
         <div class="logo-wrapper">
-            <svg viewBox="0 0 24 24" class="navbar-mascot-modern" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                 <path d="M2 12c2.5 2 4.5 2 6 0 1.5-2 3.5-2 6 0s4.5 2 6 0M2 18c2.5 2 4.5 2 6 0 1.5-2 3.5-2 6 0s4.5 2 6 0"/>
+            <svg viewBox="0 0 24 24" class="navbar-mascot-modern" stroke="currentColor" stroke-width="2.5" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M2 12c2.5 2 4.5 2 6 0 1.5-2 3.5-2 6 0s4.5 2 6 0M2 18c2.5 2 4.5 2 6 0 1.5-2 3.5-2 6 0s4.5 2 6 0" />
             </svg>
             <div class="logo">Sho-Molly</div>
         </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav>
-            <ul>
+            <ul id="nav-links">
                 <li><a href="#hero">Beranda</a></li>
                 <li><a href="#produk">Produk</a></li>
                 <li><a href="#galeri">Galeri</a></li>
@@ -62,44 +69,78 @@
         <div class="ticker-content">
             <!-- Set 1 -->
             <div class="sponsor-item">
-                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6z"/><path d="M4 16a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2z"/></svg>
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon">
+                    <path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6z" />
+                    <path d="M4 16a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2z" />
+                </svg>
                 <span>Lexxa Data Indonusa</span>
             </div>
             <div class="sponsor-item">
-                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
                 <span>Takari</span>
             </div>
             <div class="sponsor-item">
-                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
                 <span>TDK Sarana Informatika</span>
             </div>
             <div class="sponsor-item">
-                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><path d="M12 2c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z"/><path d="M12 22c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/><path d="M22 12c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4z"/><path d="M2 12c0 2.21 1.79 4 4 4s4-1.79 4-4-1.79-4-4-4-4 1.79-4 4z"/></svg>
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon">
+                    <path d="M12 2c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z" />
+                    <path d="M12 22c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
+                    <path d="M22 12c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4z" />
+                    <path d="M2 12c0 2.21 1.79 4 4 4s4-1.79 4-4-1.79-4-4-4-4 1.79-4 4z" />
+                </svg>
                 <span>Sakura</span>
             </div>
             <div class="sponsor-item">
-                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><path d="M2 20h.01M7 20v-4M12 20v-8M17 20V8M22 4v16"/></svg>
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon">
+                    <path d="M2 20h.01M7 20v-4M12 20v-8M17 20V8M22 4v16" />
+                </svg>
                 <span>cignal.id</span>
             </div>
             <!-- Set 2 (for seamless loop) -->
             <div class="sponsor-item">
-                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6z"/><path d="M4 16a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2z"/></svg>
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon">
+                    <path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6z" />
+                    <path d="M4 16a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2z" />
+                </svg>
                 <span>Lexxa Data Indonusa</span>
             </div>
             <div class="sponsor-item">
-                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
                 <span>Takari</span>
             </div>
             <div class="sponsor-item">
-                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
                 <span>TDK Sarana Informatika</span>
             </div>
             <div class="sponsor-item">
-                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><path d="M12 2c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z"/><path d="M12 22c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/><path d="M22 12c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4z"/><path d="M2 12c0 2.21 1.79 4 4 4s4-1.79 4-4-1.79-4-4-4-4 1.79-4 4z"/></svg>
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon">
+                    <path d="M12 2c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z" />
+                    <path d="M12 22c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
+                    <path d="M22 12c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4z" />
+                    <path d="M2 12c0 2.21 1.79 4 4 4s4-1.79 4-4-1.79-4-4-4-4 1.79-4 4z" />
+                </svg>
                 <span>Sakura</span>
             </div>
             <div class="sponsor-item">
-                <svg viewBox="0 0 24 24" class="modern-sponsor-icon"><path d="M2 20h.01M7 20v-4M12 20v-8M17 20V8M22 4v16"/></svg>
+                <svg viewBox="0 0 24 24" class="modern-sponsor-icon">
+                    <path d="M2 20h.01M7 20v-4M12 20v-8M17 20V8M22 4v16" />
+                </svg>
                 <span>cignal.id</span>
             </div>
         </div>
@@ -183,15 +224,21 @@
             </div>
             <div class="footer-map">
                 <!-- Using an embedded map of Kediri City for visual appeal -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126487.63228802073!2d111.93608757041927!3d-7.816401086055536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78570ebd3a0ff9%3A0x6bba84ab758df5e8!2sKediri%2C%20Kediri%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <a href="https://maps.app.goo.gl/8SVcdxtVA3WoFVxu5" target="_blank" class="map-link">Buka di Google Maps 🗺️</a>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126487.63228802073!2d111.93608757041927!3d-7.816401086055536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78570ebd3a0ff9%3A0x6bba84ab758df5e8!2sKediri%2C%20Kediri%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://maps.app.goo.gl/8SVcdxtVA3WoFVxu5" target="_blank" class="map-link">Buka di Google Maps
+                    🗺️</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p><a href="https://profile-company-two.vercel.app/" target="_blank" class="footer-credit">&copy; 2026 TDK-Sarana Informatika. All rights reserved.</a></p>
+            <p><a href="https://profile-company-two.vercel.app/" target="_blank" class="footer-credit">&copy; 2026
+                    TDK-Sarana Informatika. All rights reserved.</a></p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
